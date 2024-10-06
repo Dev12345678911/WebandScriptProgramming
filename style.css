@@ -1,199 +1,225 @@
-@charset "UTF-8"; /* CSS Document */
-/* The body tag style applies to all elements on the page */
+@charset "UTF-8"; /* Specifies character encoding for the CSS file */
+
+/* Styles for video elements */
 video {
-    width: 400px;
-    padding: 15px;
-    margin: 15px;
-    background-color: black;
-    border: 4px solid whitesmoke; /* Added 'solid' for proper syntax */
+    width: 400px; /* Sets the width of video elements */
+    padding: 15px; /* Adds padding around the video */
+    margin: 15px; /* Adds margin around the video */
+    background-color: black; /* Background color for video */
+    border: 4px solid whitesmoke; /* Solid border for video */
 }
 
+/* Styles for the body element */
 body {
-    background: beige;
-    background: -moz-linear-gradient(beige, rgb(0, 64, 120));
-    background: -webkit-linear-gradient(beige, rgb(0, 64, 120));
-    background: -o-linear-gradient(beige, rgb(0, 64, 120));
-    background: linear-gradient(beige, rgb(0, 64, 120));
-    font-family: Verdana, Geneva, Arial, sans-serif;
-    padding: 0px;
-    margin: 0px;
+    background: beige; /* Fallback background color */
+    background: -moz-linear-gradient(beige, rgb(0, 64, 120)); /* Gradient for Mozilla browsers */
+    background: -webkit-linear-gradient(beige, rgb(0, 64, 120)); /* Gradient for Webkit browsers */
+    background: -o-linear-gradient(beige, rgb(0, 64, 120)); /* Gradient for Opera */
+    background: linear-gradient(beige, rgb(0, 64, 120)); /* Standard gradient */
+    font-family: Verdana, Geneva, Arial, sans-serif; /* Font for body text */
+    padding: 0px; /* No padding */
+    margin: 0px; /* No margin */
 }
 
+/* Styles for the image class */
 .TheImage {
-    width: 40px;
-    height: 40px;
-    padding: 5px;
+    width: 40px; /* Sets the width of images with this class */
+    height: 40px; /* Sets the height of images with this class */
+    padding: 5px; /* Adds padding around the images */
 }
 
-/* The wrapper ID style is used with a div tag to provide a 960px wide page */
+/* Wrapper for layout */
 .wrapper {
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%;
-    height: auto;
+    margin-left: auto; /* Center the wrapper horizontally */
+    margin-right: auto; /* Center the wrapper horizontally */
+    width: 100%; /* Full width */
+    height: auto; /* Automatic height */
 }
 
+/* Styles for the main navigation bar */
 .mainnav {
-    display: flex;
-    align-items: center;
-    top: 0;
-    left: 0;
+    display: flex; /* Flexbox layout for nav */
+    align-items: center; /* Align items vertically */
+    top: 0; /* Positioning */
+    left: 0; /* Positioning */
 }
 
+/* Styles for navigation links */
 .mainnav a {
-    color: blue; /* Original text color */
-    font-family: Arial, Helvetica, sans-serif; /* Change the font of the buttons */
-    font-weight: bold; /* Bold the button text */
-    text-decoration: none;
-    margin: 10px;
+    color: blue; /* Text color */
+    font-family: Arial, Helvetica, sans-serif; /* Font for links */
+    font-weight: bold; /* Bold text */
+    text-decoration: none; /* Remove underline */
+    margin: 10px; /* Margin around links */
 }
 
+/* Styles for headings and list items */
 h2, h3, h4, h5, h6, li {
-    margin-left: 15px;
+    margin-left: 15px; /* Left margin */
 }
 
+/* Styles for h3 headings */
 h3 {
-    text-align: center; /* Center the heading text */
+    text-align: center; /* Center text */
 }
 
+/* Styles for h1 headings */
 h1 {
-    text-align: center; /* Center the heading text */
-    margin-bottom: 20px; /* Optional: space below the heading */
+    text-align: center; /* Center text */
+    margin-bottom: 20px; /* Space below heading */
 }
 
+/* Styles for footer */
 #footer {
-    clear: both;
-    margin-bottom: 0%;
+    clear: both; /* Clear floats */
+    margin-bottom: 0%; /* No margin below */
 }
 
+/* Styles for banner */
 #banner {
-    height: 120px;
+    height: 120px; /* Fixed height */
 }
 
 #banner h1 {
-    color: white;
+    color: white; /* Text color for banner heading */
 }
 
-/* This clear class style terminates float */
+/* Clear class to terminate floats */
 .clear {
-    clear: both;
+    clear: both; /* Clear floats */
 }
 
+/* Styles for header and footer */
 header, footer {
-    background: -moz-linear-gradient(45deg, yellow, rgb(209, 209, 209)); 
-    background: -webkit-linear-gradient(45deg, yellow, rgb(209, 209, 209)); 
-    background: -o-linear-gradient(45deg, yellow, rgb(209, 209, 209)); 
-    background: linear-gradient(45deg, yellow, rgb(209, 209, 209));
-    padding-top: 5px;
-    padding-bottom: 5px;
-    text-align: center;
+    background: -moz-linear-gradient(45deg, yellow, rgb(209, 209, 209)); /* Gradient for Mozilla */
+    background: -webkit-linear-gradient(45deg, yellow, rgb(209, 209, 209)); /* Gradient for Webkit */
+    background: -o-linear-gradient(45deg, yellow, rgb(209, 209, 209)); /* Gradient for Opera */
+    background: linear-gradient(45deg, yellow, rgb(209, 209, 209)); /* Standard gradient */
+    padding-top: 5px; /* Padding on top */
+    padding-bottom: 5px; /* Padding on bottom */
+    text-align: center; /* Center text */
 }
 
+/* Styles for aside elements */
 aside {
-    background-color: gray;
-    float: right;
-    width: 200px;
-    padding: 5px;
-    margin: 5px;
+    background-color: gray; /* Background color */
+    float: right; /* Float to the right */
+    width: 200px; /* Fixed width */
+    padding: 5px; /* Padding */
+    margin: 5px; /* Margin */
 }
 
-/* Updated styles for image and text alignment */
+/* Styles for rows containing images and text */
 .image-row {
-    margin-bottom: 20px; /* Space between each image-row */
-    display: flex; /* Allow for flex layout for the row */
-    justify-content: space-between; /* Space between the image and text */
-    padding: 0 20px; /* Space from the edges of the page */
+    margin-bottom: 20px; /* Space below each image-row */
+    display: flex; /* Flex layout for the row */
+    justify-content: space-between; /* Space between items */
+    padding: 0 20px; /* Space from edges */
 }
 
+/* Styles for the text next to images */
 .image-text {
-    display: flex;
-    align-items: flex-start; /* Align items to the top */
-    width: calc(100% - 40px); /* Take full width minus margins */
+    display: flex; /* Flex layout */
+    align-items: flex-start; /* Align items at the top */
+    width: calc(100% - 40px); /* Full width minus margins */
 }
 
+/* Styles for images in the image-text container */
 .image-text img {
-    margin-right: 15px; /* Space between the image and text */
-    width: 250px; /* Increased width for images */
+    margin-right: 15px; /* Space between image and text */
+    width: 250px; /* Width of images */
     height: auto; /* Maintain aspect ratio */
 }
 
-/* New styles for the text container */
+/* New styles for text container next to images */
 .image-text div {
-    display: flex;
-    flex-direction: column; /* Stack the title and paragraph vertically */
+    display: flex; /* Flex layout for text */
+    flex-direction: column; /* Stack title and paragraph vertically */
     justify-content: center; /* Center content vertically */
-    margin-left: auto; /* Push text to the far right */
+    margin-left: auto; /* Push text to the right */
 }
 
-/* Adjust paragraph styles */
+/* Paragraph styles */
 .image-text p {
-    margin: 0; /* Remove default margin for paragraphs */
+    margin: 0; /* Remove default margin */
     line-height: 1.5; /* Improve readability */
 }
 
+/* Styles for centered forms */
 .centered-form {
-    max-width: 600px; /* Set a max width for the form */
-    margin: 50px; /* Center the form with auto margins */
-    margin-left: 470px;
+    max-width: 600px; /* Maximum width for forms */
+    margin: 50px; /* Center form with auto margins */
+    margin-left: 470px; /* Adjust left margin */
 }
 
+/* Styles for text containers */
 .text-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center; /* Centers the title and the paragraph horizontally */
-    text-align: center;  /* Centers the text inside the paragraph */
+    display: flex; /* Flex layout */
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center items */
+    text-align: center; /* Center text */
 }
 
+/* Paragraph spacing styles */
 .text-container p {
-    margin: 5px 0; /* Adjusts the spacing between the paragraphs */
+    margin: 5px 0; /* Adjust spacing between paragraphs */
 }
 
+/* Styles for paragraphs in image-text div */
 .image-text div p {
-    max-width: 500px; /* Optional: limits the width of the text for readability */
+    max-width: 500px; /* Limits width for readability */
 }
 
+/* Styles for the about section */
 .about-box {
-    margin: 0 auto; /* Centers the box horizontally */
-    max-width: 600px; /* Sets a maximum width */
-    padding: 20px; /* Adds space inside the box */
-    border-style: solid;
-    background-color: lightgray; /* Sets a background color */
-    text-align: center; /* Centers the text inside the box */
+    margin: 0 auto; /* Center the box horizontally */
+    max-width: 600px; /* Maximum width */
+    padding: 20px; /* Padding inside the box */
+    border-style: solid; /* Solid border */
+    background-color: lightgray; /* Background color */
+    text-align: center; /* Center text inside the box */
 }
 
+/* Styles for video and image container */
 .video-image-container {
-    display: flex; /* Use flexbox to align the video and image side by side */
-    justify-content: space-between; /* Place the video on the left and the image on the right */
- /* Vertically align the items in the center */
+    display: flex; /* Flexbox for layout */
+    justify-content: space-between; /* Space between video and image */
     margin: 20px; /* Margin around the container */
 }
 
+/* Styles for side images */
 .side-image {
-    width: 220px; /* Adjust the width as needed */
-    height: auto; /* Maintain the aspect ratio */
-    margin: 5px; /* Adjust the margin as needed */
+    width: 220px; /* Width for side images */
+    height: auto; /* Maintain aspect ratio */
+    margin: 5px; /* Margin around images */
 }
+
+/* Styles for bordered images */
 .bordered-image {
-    border: 4px solid whitesmoke; /* Match the border style of the video */
-    padding: 5px; /* Optional padding inside the border */
-    background-color: black; /* Optional background color to match the video style */
+    border: 4px solid whitesmoke; /* Border style */
+    padding: 5px; /* Optional padding */
+    background-color: black; /* Background color */
 }
-/* New styles for example.html */
+
+/* New styles for the projects section */
 .projects-section {
     text-align: center; /* Center the text */
     margin-bottom: 20px; /* Space below */
 }
 
+/* Styles for project image rows */
 .image-row {
-    display: flex; /* Use flexbox for layout */
+    display: flex; /* Flexbox layout */
     justify-content: space-around; /* Space items evenly */
     margin-bottom: 20px; /* Space below each row */
 }
 
+/* Styles for individual project items */
 .project-item {
     text-align: center; /* Center the caption */
 }
 
+/* Fixed styles for project images */
 .project-image {
     width: 220px; /* Fixed width */
     height: 220px; /* Fixed height */
